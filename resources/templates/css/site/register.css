@@ -1,0 +1,58 @@
+button {
+	border-radius: 0px;
+	background-color: white;
+	font-size: 16px;
+	color: black;
+	border: 2px black solid;
+}
+
+body {
+	font-family: ubuntu, monospace, arial;
+	background-color: skyblue;
+	background-image: url("https://images.unsplash.com/photo-1506259091721-347e791bab0f?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80");
+	font-size: 20px;
+}
+
+table, th, td {
+  	border: 1px solid black;
+  	border-collapse: collapse;
+	text-align: center;
+}
+
+table {
+	width: 50%;
+}
+
+input {
+	border-radius: 0px;
+	border: 2px black solid;
+}
+
+h1 {
+	text-align: center;
+}
+
+#entry {
+	text-align: center;
+	border: 2px black solid;
+	width: 300px;
+	height: 350px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+header {
+	text-align: right;
+}
+
+button:hover {
+	color: darkblue;
+	font-size: 24px;
+}
+
+a:hover {
+	font-size: 24px;
+	color: darkblue;
+}

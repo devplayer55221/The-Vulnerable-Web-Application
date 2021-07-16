@@ -1,0 +1,62 @@
+h1{
+	font-family: sans-serif, pangolin, umpush, ubuntu, arial;
+}
+
+p{
+	display: inline;
+	color: black;
+}
+
+h4 {
+	color: black;
+}
+
+h5 {
+	color: black;
+}
+
+body{
+	font-family: sans-serif, pangolin, umpush, ubuntu, arial;
+	background-color: black;
+	text-align: center;
+	font-size: 18;
+	color: white;
+}
+
+ol {
+	margin-left: 40%;
+	text-align: left;
+}
+
+button {
+	font-family: sans-serif, pangolin, umpush, ubuntu, arial;
+	font-size: 20;
+	background-color: black;
+	color: white;
+	padding: 5px;
+}
+
+#chall1 {
+	background-color: lightgreen;
+}
+
+input {
+	border-radius: 0px;
+}
+
+#error {
+	color: white;
+}
+
+a:hover {
+	font-size: 20px;
+	text-decoration: underline;
+	color: skyblue;
+}
+
+button:hover {
+	font-size: 24px;
+	color: skyblue;
+	box-shadow: 2px 2px;
+}
+

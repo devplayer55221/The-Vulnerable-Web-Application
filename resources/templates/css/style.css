@@ -1,0 +1,99 @@
+h1{
+	font-family: "Courier", monospace;
+}
+
+h3 {
+	color: black;
+	background-color: white;
+}
+
+p{
+	font-family: "Courier", monospace;
+}
+
+body{
+	font-family: "Courier", monospace;
+	background-color: black;
+	text-align: center;
+	font-size: 18;
+	color: white;
+}
+
+ol {
+	margin-left: 40%;
+	text-align: left;
+}
+
+button {
+	font-family: "Courier", monospace;
+	font-size: 20;
+	
+	margin-top: 50%;
+	background-color: black;
+	color: white;
+	padding: 5px;
+}
+
+a {
+	color: black;
+	font-family: "Courier", monospace;
+	text-decoration: none;
+}
+
+a:hover {
+	font-size: 20px;
+	text-decoration: underline;
+	color: skyblue;
+}
+
+button:hover {
+	font-size: 24px;
+	color: skyblue;
+	box-shadow: 2px 2px;
+}
+
+li {
+	margin-left: -50px;
+}
+
+/*.column {
+	float: left;
+	width: 30.33%;
+}*/
+
+#c1 {
+	float: left;
+	width: 25%;	
+	background-color: lightgreen;
+	height: 70%;
+}
+
+#c2 {
+	float: left;
+	width: 50%;
+	background-color: green;
+	height: 70%;
+}
+
+#c3 {
+	float: right;
+	width: 25%;
+	background-color: skyblue;
+	height: 70%;
+}
+
+ol {
+	margin-right: 100px;
+}
+
+/*.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}*/
+
+/*#c2 {
+	border-right: 3px solid lightblue;
+	height: 400px;
+	left: 25%;
+}*/

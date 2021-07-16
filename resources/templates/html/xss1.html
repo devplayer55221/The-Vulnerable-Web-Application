@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>XSS 1</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+		<script src="/js/xss1.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="/css/xss1.css">
+	</head>
+		<body>
+			<header>
+				<a href="xss2">XSS2 - Stored XSS</a><br/>
+				<a href="xss3">XSS3 - Reflected XSS</a><br/>
+			</header>
+			<h2>This is DOM XSS challenge</h2>
+			<br/><br/>
+			<div id="chall1">
+				<br/>
+				<p>Please enter your name</p>
+				<input type="text" name="name" id="myname"/><br/><br/>
+				<button id="submit">Submit</button>
+			</div>
+		</body>
+</html>

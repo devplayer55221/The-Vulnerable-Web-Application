@@ -1,0 +1,26 @@
+{
+  "name": "web_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "child_process": "^1.0.2",
+    "cookie-parser": "^1.4.5",
+    "express": "^4.17.1",
+    "express-fileupload": "^1.2.1",
+    "libxmljs": "^0.19.7",
+    "multer": "^1.4.2",
+    "mysql": "^2.18.1",
+    "request": "^2.88.2",
+    "xml-js": "^1.6.11",
+    "xml2js": "^0.4.23",
+    "xmldoc": "^1.1.2"
+  }
+}

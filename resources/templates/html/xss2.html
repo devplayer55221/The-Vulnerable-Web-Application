@@ -1,0 +1,30 @@
+<html>
+	<head>
+		<title>XSS 2</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="/css/xss2.css">
+	</head>
+		<body>
+			<header>
+				<a href="xss1">XSS1 - DOM XSS</a><br/>
+				<a href="xss3">XSS3 - Reflected XSS</a><br/>
+			</header>
+			<h2>This is Stored XSS challenge</h2>
+			<br/>
+		<div id="chall1">
+			<p>Previous comments</p>
+			<div id="comm">
+			</div>
+			<br/>
+			<p>Enter your comment</p>
+			<textarea id="text1" rows="4" cols="20"></textarea><br/>
+			<button id="sub">Submit</button>
+		</div>
+			<div id="happened">
+			</div>
+
+		<script src="/js/xss2.js"></script>
+		</body>
+</html>

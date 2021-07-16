@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>
+			Start page
+		</title>
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="/css/style.css">
+	</head>
+	<body>
+		<h1 onclick="myfunc()">The Vulnerable Web Application</h1>
+		<hr color="lightblue"/>
+		<div class="row">
+			<div class="column" id="c1">
+				<button id="register">Register new user</button>
+			</div>
+
+			<div class="column" id="c2">
+				<h3>The list of vulnerabilities</h3><br/>
+				<ol>
+					<li><a href="/xss1">XSS</a></li>
+					<li><a href="/sql1">SQL Injection</a></li>
+					<li><a href="/ba1">Broken Authentication</a></li>
+					<li><a href="/ac1">Access Control</a></li>
+					<li><a href="/sd1">Sensitive Data Exposure</a></li>
+					<li><a href="/xxe">XXE</a></li>
+					<!-- <li><a href="/pt1">Path Traversal</a></li> -->
+					<li><a href="/fu">File Upload</a></li>
+					<li><a href="/ce">Command Execution</a></li>
+				</ol>
+			</div>
+
+			<div class="column" id="c3">
+				<button id="mysite">Visit the Site</button>
+			</div>
+		</div>
+
+		<script src="/js/site/home.js"></script>
+
+	</body>
+</html>

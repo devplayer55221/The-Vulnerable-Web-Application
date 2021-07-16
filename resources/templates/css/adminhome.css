@@ -1,0 +1,27 @@
+h1{
+	font-family: sans-serif, pangolin, umpush, ubuntu, arial;
+}
+
+p{
+	font-family: sans-serif, pangolin, umpush, ubuntu, arial;
+}
+
+body{
+	font-family: sans-serif, pangolin, umpush, ubuntu, arial;
+	background-color: black;
+	text-align: center;
+	font-size: 18;
+	color: white;
+}
+
+ol {
+	margin-left: 40%;
+	text-align: left;
+}
+
+button {
+	font-family: sans-serif, pangolin, umpush, ubuntu, arial;
+	font-size: 20;
+}
+
+
