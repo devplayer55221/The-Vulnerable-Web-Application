@@ -1,31 +1,31 @@
 Work done:
-•	XXE
-o	There are dependencies present in the nodejs modules which parse XML and escape any malicious code present in it.
-o	libxmljs does the work of showing vulnerability
-o	Secure code for XXE
-o	Secure code for Register model, use of parameters in query
+	•	XXE
+		o	There are dependencies present in the nodejs modules which parse XML and escape any malicious code present in it.
+		o	libxmljs does the work of showing vulnerability
+		o	Secure code for XXE
+		o	Secure code for Register model, use of parameters in query
 
-•	Sensitive data exposure
-o	Created; displays the error from database
+	•	Sensitive data exposure
+		o	Created; displays the error from database
 
 Solutions - correct/secure implementations
 
-•	SQL - changes only in the model part, use of query with parameters
-o	secure_searchmodel	
-o	secure_registermodel
+	•	SQL - changes only in the model part, use of query with parameters
+		o	secure_searchmodel	
+		o	secure_registermodel
 
-•	XXE - use of other libraries like xml2js, will escape the xml statements sent to the        backend.
+	•	XXE - use of other libraries like xml2js, will escape the xml statements sent to the backend.
 
-•	Broken authentication - limit the number of login attempts by recording dates in an array
+	•	Broken authentication - limit the number of login attempts by recording dates in an array
 
-•	**Access Control - we can encrypt the cookie and only decrypt or change its value in backend, this way the attacker would not be able to change its value to access the admin account 
+	•	**Access Control - we can encrypt the cookie and only decrypt or change its value in backend, this way the attacker would not be able to change its value to access the admin account 
 
-•	Sensitive information disclosure - the error information that was passed to the front end previously is changed to a very general message to not give the user any hints about backend or database
+	•	Sensitive information disclosure - the error information that was passed to the front end previously is changed to a very general message to not give the user any hints about backend or database
 
 
-•	Command execution - we can check the input for presence of some special characters that could lead to different command execution 
+	•	Command execution - we can check the input for presence of some special characters that could lead to different command execution 
 
-•	File upload - we can write codes for checking of file name in the backend before upload function (index.js)
+	•	File upload - we can write codes for checking of file name in the backend before upload function (index.js)
 
 
 
@@ -39,7 +39,7 @@ Technique -
 
 
 
-	--------------EXPLOITS----------------
+--------------EXPLOITS----------------
 
 •	XSS(Reflected): A name is asked to enter into the input field, and the information regarding the name will be displayed back. Along with name, if the user also enters some script like <script>alert(10)</script>, then when displaying the information back, the script is also put inside the front-end tag, which then executes the malicious code.
 
@@ -90,7 +90,7 @@ Technique -
 •	Broken access control: The cookie value should be encrypted while sending it, so that the user cannot manipulate the cookie value to get access to any other account. Also the redirection of a page should not be solely dependent on the cookie value
 
 •	XXE(XML external entity): The node module that is used for parsing the XML data sent in the request body is responsible for it. Either we can manually check the data according to pattern and for presence of any different word
-o	libxmljs will parse the data as it is, show the vulnerability, while the other modules like xml-stream, xmldoc will prevent this vulnerability
+	o	libxmljs will parse the data as it is, show the vulnerability, while the other modules like xml-stream, xmldoc will prevent this vulnerability
 
 •	Sensitive data exposure: Proper checks should be present in the controller files for all the vulnerabilities, that in case of any error, that doesn't get directly displayed on frontend, rather a very generic crafted message should be sent in response
 
