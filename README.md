@@ -1,4 +1,13 @@
-Work done:
+--------------REQUIREMENTS------------------
+
+Node.js, NPM, MySQL
+MySQL database needs to be created..
+In it different tables must be created according to the usage..
+
+
+--------------WORK DONE------------------
+
+
 	•	XXE
 		o	There are dependencies present in the nodejs modules which parse XML and escape any malicious code present in it.
 		o	libxmljs does the work of showing vulnerability
