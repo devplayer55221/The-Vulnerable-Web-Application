@@ -25,28 +25,17 @@ The login page, uses the same database for validating the user and allows access
 - **File upload**: User is to upload an image file, but due to no check user can input malicious file of reverse shell and execute it on the server.
 - **Command execution**: User is to input an IP address and get the ping response for it. It works by executing ping command on that IP address in the server shell. If the user enters some command appended with the IP address, then that is also executed and the result is shown in the frontend.
 
-  
-* ### Remediations
 
-* __XSS(Reflected)__: Input sanitiztion is needed
+### Remediations
 
-* __XSS(Stored)__: Input sanitiztion is needed
-
-* __XSS(DOM)__: Input sanitiztion is needed
-
-* __SQL injection__: Input sanitiztion is needed. We can use stored procedure for executing query, that will not allow malformed data to enter the query
-
-
-* __File upload__: The extension of the file that is going to be uploaded, should be checked and also the type of file should be checked, by maybe converting to hex code
-
-* __Broken authentication__: Proper passwords should be used. General passwords should be rejected while registering the user. Also, to prevent brute force attack, there should be code in place that prevents multiple login attempt in same session
-
-* __Broken access control__: The cookie value should be encrypted while sending it, so that the user cannot manipulate the cookie value to get access to any other account. Also the redirection of a page should not be solely dependent on the cookie value
-
-* __XXE(XML external entity)__: The node module that is used for parsing the XML data sent in the request body is responsible for it. Either we can manually check the data according to pattern and for presence of any different word
-	* libxmljs will parse the data as it is, show the vulnerability, while the other modules like xml-stream, xmldoc will prevent this vulnerability
-
-* __Sensitive data exposure__: Proper checks should be present in the controller files for all the vulnerabilities, that in case of any error, that doesn't get directly displayed on frontend, rather a very generic crafted message should be sent in response
-
-* __Command execution__: input check should be present in the frontend and backend, so that no append character is present in the input. IP address must only be present, so data should be validated against a pattern that only contains periods and numbers
+- __XSS(Reflected)__: Input sanitiztion is needed
+- __XSS(Stored)__: Input sanitiztion is needed
+- __XSS(DOM)__: Input sanitiztion is needed
+- __SQL injection__: Input sanitiztion is needed. We can use stored procedure for executing query, that will not allow malformed data to enter the query
+- __File upload__: The extension of the file that is going to be uploaded, should be checked and also the type of file should be checked, by maybe converting to hex code
+- __Broken authentication__: Proper passwords should be used. General passwords should be rejected while registering the user. Also, to prevent brute force attack, there should be code in place that prevents multiple login attempt in same session
+- __Broken access control__: The cookie value should be encrypted while sending it, so that the user cannot manipulate the cookie value to get access to any other account. Also the redirection of a page should not be solely dependent on the cookie value
+- __XXE(XML external entity)__: The node module that is used for parsing the XML data sent in the request body is responsible for it. Either we can manually check the data according to pattern and for presence of any different word. `libxmljs` will parse the data as it is, show the vulnerability, while the other modules like xml-stream, xmldoc will prevent this vulnerability
+- __Sensitive data exposure__: Proper checks should be present in the controller files for all the vulnerabilities, that in case of any error, that doesn't get directly displayed on frontend, rather a very generic crafted message should be sent in response
+- __Command execution__: input check should be present in the frontend and backend, so that no append character is present in the input. IP address must only be present, so data should be validated against a pattern that only contains periods and numbers
 
