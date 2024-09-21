@@ -1,4 +1,4 @@
-### REQUIREMENTS
+### Requirements
 
 - Node.js, NPM, MySQL
 - MySQL database needs to be created.
@@ -39,9 +39,7 @@ The login page, uses the same database for validating the user and allows access
 		The code may be something like this.
 * __File upload__: User is to upload an image file, but due to no check user can input malicious file of reverse shell and execute it on the server.
 
-* __Command execution__: User is to input an IP address and get the ping response for it. It works by executing ping command on that IP address in the server shell. If the user enters some command appended with the IP address, then that is also executed and the result is shown in the frontend.<br/><br/>
-
-
+* __Command execution__: User is to input an IP address and get the ping response for it. It works by executing ping command on that IP address in the server shell. If the user enters some command appended with the IP address, then that is also executed and the result is shown in the frontend.
 
 ### Remediations
 
