@@ -1,23 +1,18 @@
 ### REQUIREMENTS
 
-Node.js, NPM, MySQL
-MySQL database needs to be created..
-In it different tables must be created according to the usage..  <br/><br/>
+- Node.js, NPM, MySQL
+- MySQL database needs to be created.
+	- Different tables must be created according to the usage.
 
-
-**There are two sections in the project. The first section contains the different types of vulnerabilities, along with how to prevent them, and the second section contains a simple shopping website, on which the user could practise finding web application vulnerabilities.**  <br/><br/>
-
-
-
-**Technique**
+### About
+There are two sections in the project. The first section contains the different types of vulnerabilities, along with how to prevent them, and the second section contains a simple shopping website, on which the user could practise finding web application vulnerabilities.
 
 I have used Node.js for the whole backend part, along with MySQL for the database. The whole thing is setup in Linux environment though it can be setup in Windows also. 
 For the market site, simple home page is made which has login, register options. Separate tables are made in the database for the market site. On registering, user details are stored in a table.
 The login page, uses the same database for validating the user and allows access to the dashboard, the main page for site funcionality.<br/><br/>
 
 
-
-### EXPLOITS
+### Vulnerabilities
 
 * __XSS(Reflected)__: A name is asked to enter into the input field, and the information regarding the name will be displayed back. Along with name, if the user also enters some script like <script>alert(10)</script>, then when displaying the information back, the script is also put inside the front-end tag, which then executes the malicious code.
 
@@ -48,8 +43,7 @@ The login page, uses the same database for validating the user and allows access
 
 
 
-
-### SECURE CODE
+### Remediations
 
 * __XSS(Reflected)__: Input sanitiztion is needed
 
